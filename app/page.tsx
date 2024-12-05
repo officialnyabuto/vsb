@@ -3,11 +3,14 @@ import Hero from './components/Hero'
 import Services from './components/Services'
 import Projects from './components/Projects'
 import About from './components/About'
-import Gallery from './components/Gallery'
-import Testimonials from './components/Testimonials'
-import Partners from './components/Partners'
-import Contact from './components/Contact'
+import dynamic from 'next/dynamic'
 import Footer from './components/Footer'
+
+// Lazy load components that are below the fold
+const Gallery = dynamic(() => import('./components/Gallery'))
+const Testimonials = dynamic(() => import('./components/Testimonials'))
+const Partners = dynamic(() => import('./components/Partners'))
+const Contact = dynamic(() => import('./components/Contact'))
 
 export default function Home() {
   return (

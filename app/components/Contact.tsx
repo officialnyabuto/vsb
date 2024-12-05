@@ -8,18 +8,29 @@ export default function Contact() {
         <div>
           <h3 className="text-2xl font-semibold mb-4 font-architects-daughter">Contact Information</h3>
           <div className="space-y-4">
-            <p className="flex items-center">
+            <a 
+              href="mailto:info@visionsketchandbuild.com" 
+              className="flex items-center hover:text-blue-600 transition-colors"
+            >
               <Mail className="h-5 w-5 mr-2" />
               info@visionsketchandbuild.com
-            </p>
-            <p className="flex items-center">
+            </a>
+            <a 
+              href="tel:+254708728695" 
+              className="flex items-center hover:text-blue-600 transition-colors"
+            >
               <Phone className="h-5 w-5 mr-2" />
               +254708728695
-            </p>
-            <p className="flex items-center">
+            </a>
+            <a 
+              href="https://maps.google.com/?q=Ufungamano+House,+State+House+Road,+Nairobi,+Kenya" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center hover:text-blue-600 transition-colors"
+            >
               <MapPin className="h-5 w-5 mr-2" />
               Ufungamano House, State House Road, Nairobi, Kenya
-            </p>
+            </a>
           </div>
         </div>
         <form className="space-y-4">
